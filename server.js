@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Set up routes
-app.use("/", htmlRoutes); // I have no idea why it has to be "/" to work but okay
-app.use("/", apiRoutes);
+app.use("/", htmlRoutes);
+app.use("/api", apiRoutes);
 
 // Start server and begin listening
 app.listen(PORT, function() {
