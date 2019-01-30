@@ -15,6 +15,7 @@ app.use(express.json());
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
 
+
 // Start server and begin listening
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
