@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Home</h1>
+    <!-- <h1>Home</h1> -->
+    <div class="container my-4">
+        <div class="jumbotron">
+            <h1 class="display-4">FriendFinder</h1>
+            <hr class="my-4">
+            <p class="lead">Answer a few basic questions.</p>
+            <p class="lead">Then find the friend with the greatest compatibility!</p>
+            <a href="/survey">
+                <button class="btn btn-primary">Go to Survey</button>
+            </a>
+        </div>
+
+        <a href="/api/friends">API Friends List</a> | <a href="https://github.com/Dylan-Thomson/FriendFinder">GitHub Repo</a>
+    </div>
+
 </body>
 </html>

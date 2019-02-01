@@ -2,7 +2,7 @@
 const friends = [
     {
         "name":"Ahmed",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://cook.fnr.sndimg.com/content/dam/images/cook/editorial/talent/guy-fieri/CCTV-TalentAvatar-Guy-Fieri-800x800.jpg.rend.hgtvcom.616.616.suffix/1478703698614.jpeg",
         "scores":[
             5,
             1,
