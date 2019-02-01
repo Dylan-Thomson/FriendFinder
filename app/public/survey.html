@@ -9,7 +9,7 @@
     
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+        <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container my-4">
@@ -160,37 +160,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $(document).ready( () => {
-            $("#submit").on("click", event => {
-                event.preventDefault();
-                if($("#name").val() === "" || $("#photo").val() === "") {
-                    alert("Please fill out all required forms!");
-                }
-                else {
-                    const scores = [];
-                    for(let i = 1; i <= $(".question").length; i++) {
-                        scores.push(Number($("#question" + i).val()));
-                    }
-                    // console.log(scores);
-                    const newUser = {
-                        name: $("#name").val(),
-                        photo: $("#photo").val(),
-                        scores: scores
-                    }
-
-                    $.post("/api/friends", newUser).then(data => {
-                        console.log(data.name);
-                        $("#bestMatchName").text(data.name);
-                        $("#bestMatchPhoto").attr("src", data.photo);
-                        $("#bestMatch").modal("show");
-                    });
-                    // console.log(newUser);
-
-                }
-            });
-        });
-    </script>
 </body>
 </html>

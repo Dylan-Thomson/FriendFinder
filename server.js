@@ -14,9 +14,9 @@ app.use(express.json());
 // Set up routes
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
-app.use(express.static(path.join(__dirname, "public")));
-console.log(path.join(__dirname + "/app/public"));
-// app.use(express.static("public"));
+
+// Serve static files
+app.use(express.static(path.join(__dirname, "app/public")));
 
 // Start server and begin listening
 app.listen(PORT, function() {
