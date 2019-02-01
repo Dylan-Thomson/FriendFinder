@@ -1,4 +1,3 @@
-// HTML ROUTES HERE
 const path = require("path");
 module.exports = (() => {
     'use strict';

@@ -16,7 +16,6 @@ $(document).ready( () => {
             }
 
             $.post("/api/friends", newUser).then(data => {
-                console.log(data.name);
                 $("#bestMatchName").text(data.name);
                 $("#bestMatchPhoto").attr("src", data.photo);
                 $("#bestMatch").modal("show");
