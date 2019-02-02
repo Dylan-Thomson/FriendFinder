@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="container my-4">
-        <h1>Survey Questions</h1>
+        <h1 class="text-center">Survey Questions</h1>
         <hr class="my-4">
-        <form>
+        <form class="w-75 mx-auto">
             <h4>About You</h4>
             <div class="form-group">
                 <label for="name">Name (Required)</label>
@@ -38,7 +38,7 @@
             </div>
             <h4>Question 2</h4>
             <div class="form-group">
-                <label for="question2">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
                 <select class="form-control question" id="question2">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -49,7 +49,7 @@
             </div>
             <h4>Question 3</h4>
             <div class="form-group">
-                <label for="question3">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
                 <select class="form-control question" id="question3">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -60,7 +60,7 @@
             </div>
             <h4>Question 4</h4>
             <div class="form-group">
-                <label for="question4">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question4">You rarely do something just out of sheer curiosity.</label>
                 <select class="form-control question" id="question4">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -71,7 +71,7 @@
             </div>
             <h4>Question 5</h4>
             <div class="form-group">
-                <label for="question5">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question5">People can rarely upset you.</label>
                 <select class="form-control question" id="question5">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -82,7 +82,7 @@
             </div>
             <h4>Question 6</h4>
             <div class="form-group">
-                <label for="question6">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question6">It is often difficult for you to relate to other people’s feelings.</label>
                 <select class="form-control question" id="question6">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -93,7 +93,7 @@
             </div>
             <h4>Question 7</h4>
             <div class="form-group">
-                <label for="question7">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question7">In a discussion, truth should be more important than people’s sensitivities.</label>
                 <select class="form-control question" id="question7">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -104,7 +104,7 @@
             </div>
             <h4>Question 8</h4>
             <div class="form-group">
-                <label for="question8">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question8">You rarely get carried away by fantasies and ideas.</label>
                 <select class="form-control question" id="question8">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -115,7 +115,7 @@
             </div>
             <h4>Question 9</h4>
             <div class="form-group">
-                <label for="question9">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
                 <select class="form-control question" id="question9">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -126,7 +126,7 @@
             </div>
             <h4>Question 10</h4>
             <div class="form-group">
-                <label for="question10">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="question10">You feel more energetic after spending time with a group of people.</label>
                 <select class="form-control question" id="question10">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
@@ -143,20 +143,20 @@
     
     <div class="modal fade" id="bestMatch" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modalTitle">Best Match</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h3 id="bestMatchName">Your Best Friend</h3>
-                <img id="bestMatchPhoto" src="https://www.catster.com/wp-content/uploads/2018/03/An-excited-cat-with-his-claws-out.jpg" alt="Best Match Photo">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalTitle">Best Match</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="bestMatchName">Your Best Friend</h3>
+                    <img id="bestMatchPhoto" src="https://www.catster.com/wp-content/uploads/2018/03/An-excited-cat-with-his-claws-out.jpg" alt="Best Match Photo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
