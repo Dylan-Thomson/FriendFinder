@@ -1,6 +1,5 @@
 const path = require("path");
 module.exports = (() => {
-    'use strict';
     const htmlRoutes = require("express").Router();
 
     htmlRoutes.get("/", (req, res) => {

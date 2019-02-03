@@ -1,7 +1,6 @@
 const friends = require("../data/friends");
 
 module.exports = (() => {
-    "use strict";
     const apiRoutes = require("express").Router();
 
     apiRoutes.get("/friends", (req, res) => {
