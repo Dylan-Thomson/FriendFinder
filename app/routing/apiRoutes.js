@@ -9,6 +9,7 @@ module.exports = (() => {
 
     // POST ROUTE
     apiRoutes.post("/friends", (req, res) => {
+        req.body.scores = req.body.scores.map(score => Number(score));
         const userScores = req.body.scores;
 
         // Store current best match and difference
