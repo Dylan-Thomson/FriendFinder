@@ -2,12 +2,12 @@ const friends = require("../data/friends");
 
 module.exports = (() => {
     const apiRoutes = require("express").Router();
-
+    // GET ROUTE
     apiRoutes.get("/friends", (req, res) => {
         return res.json(friends);
     });
 
-    //POST ROUTE
+    // POST ROUTE
     apiRoutes.post("/friends", (req, res) => {
         const userScores = req.body.scores;
 
@@ -19,7 +19,7 @@ module.exports = (() => {
             const friendScores = friend.scores;
             const differences = [];
 
-            // Calculate difference for each score
+            // Calculate difference for each score and push to differences array
             for(let i = 0; i < userScores.length; i++) {
                 differences.push(Math.abs(userScores[i] - friendScores[i]));
             }
@@ -39,10 +39,9 @@ module.exports = (() => {
                 bestMatch = friend;
                 smallestDifference = result;
             }
-            console.log(friend.name, friendScores, userScores, differences, result);
         });
 
-        // Push user to friends and send best match
+        // Push user to friends and send best match to client
         friends.push(req.body);
         res.json(bestMatch);
     });

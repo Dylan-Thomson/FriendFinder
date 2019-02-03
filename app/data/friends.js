@@ -1,4 +1,3 @@
-// STORE FRIEND OBJECTS HERE
 const friends = [
     {
         name:"Bob Ross",
