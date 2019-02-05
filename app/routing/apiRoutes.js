@@ -9,6 +9,7 @@ module.exports = (() => {
 
     // POST ROUTE
     apiRoutes.post("/friends", (req, res) => {
+        // Convert scores to Number types before pushing them
         req.body.scores = req.body.scores.map(score => Number(score));
         const userScores = req.body.scores;
 
