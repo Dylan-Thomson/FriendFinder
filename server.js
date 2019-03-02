@@ -20,5 +20,9 @@ app.use(express.static(path.join(__dirname, 'app/public')));
 
 // Start server and begin listening
 app.listen(PORT, () => {
-  console.log(`App listening on PORT ${PORT}`);
+  console.log(
+    '==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.',
+    PORT,
+    PORT,
+  );
 });
